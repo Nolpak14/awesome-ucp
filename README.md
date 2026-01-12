@@ -55,23 +55,7 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 
 ## Mockup Server
 
-Quickly spin up a local UCP-compliant mock server for development and testing:
-
-```bash
-# Install the UCP client with server extras
-uv pip install "ucp-client[server]==0.0.11"
-
-# Run the mockup server
-uv run ucp mockup_server
-```
-
-The mockup server provides a fully functional UCP endpoint at `http://localhost:8182` with:
-- Product catalog
-- Checkout session management
-- Mock payment processing
-- Order tracking
-
-Perfect for testing your AI agents and UCP integrations locally.
+- 🐍 [UCP Mockup Server](https://github.com/Upsonic/ucp-client?tab=readme-ov-file#mockup-server) - Local UCP-compliant mock server for development and testing
 
 <br>
 
@@ -94,19 +78,7 @@ Perfect for testing your AI agents and UCP integrations locally.
 
 ## Use Cases
 
-### 🛍️ AI Shopping Assistant
-
-The primary use case for UCP is enabling AI agents to shop on behalf of users. Instead of users manually browsing websites, adding items to cart, and checking out, an AI assistant can:
-
-1. **Discover** merchants and their capabilities via `/.well-known/ucp`
-2. **Search & Browse** products using natural language
-3. **Create Checkout** with selected items and user preferences
-4. **Handle Payment** securely through standardized payment flows
-5. **Track Orders** and provide real-time updates
-
-This creates a seamless conversational commerce experience where users simply tell the AI what they want, and the agent handles the entire purchasing flow.
-
-**Real-world Implementation:** [Upsonic UCP Agent](https://github.com/Upsonic/UCP-Agent) demonstrates this pattern with a fully functional shopping assistant that uses UCP to interact with merchants.
+- 🛍️🤖 [UCP Shopping Agent](https://github.com/Upsonic/UCP-Agent) - AI shopping assistant that demonstrates the full UCP purchasing flow
 
 <br>
 
