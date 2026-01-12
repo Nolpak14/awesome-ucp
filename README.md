@@ -81,7 +81,7 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 
 ## Implementations
 
-> 🚧 Coming soon - SDKs and reference implementations
+- 🎖️🐍 [Official Python SDK](https://github.com/Universal-Commerce-Protocol/python-sdk) - The official Python library for UCP with Pydantic models
 
 ## AI & Agent Integrations
 
