@@ -114,4 +114,4 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 
 ## Contributing
 
-Contributions are welcome! Please read the contribution guidelines first.
+Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
