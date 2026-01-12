@@ -82,13 +82,14 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 ## Implementations
 
 - 🎖️🐍 [Official Python SDK](https://github.com/Universal-Commerce-Protocol/python-sdk) - The official Python library for UCP with Pydantic models
+- 🐍 [UCP Client Python](https://github.com/Upsonic/ucp-client-python) - Python client library for UCP
 - ☁️🏪 [Google UCP Merchant Docs](https://developers.google.com/merchant/ucp) - Guide for merchants to enable AI-powered purchases through Google's AI surfaces like Search AI Mode and Gemini
 - ☁️🏪 [Shopify - Agentic Commerce with UCP](https://shopify.dev/docs/agents) - Framework for building AI agents that search products, create checkouts, and track orders across Shopify merchants
 
 
 ## AI & Agent Integrations
 
-> 🚧 Coming soon - MCP bridges, A2A integrations, and AI shopping assistants
+- 🤖🐍 [UCP Agent Demo](https://github.com/Upsonic/UCP-Agent) - A shopping assistant powered by Upsonic AI Agent and UCP (Universal Commerce Protocol)
 
 ## Developer Tools
 
@@ -99,6 +100,9 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 
 - [Building the Universal Commerce Protocol](https://shopify.engineering/UCP) - Shopify's deep dive into UCP architecture, capabilities, and how AI agents conduct transactions with merchants
 - [Under the Hood: Universal Commerce Protocol](https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/) - Google's technical overview of UCP as an open-source standard for agentic commerce
+- [Etsy Partners with Google on AI-Powered Shopping](https://www.etsy.com/news/etsy-partners-with-google-on-ai-powered-shopping) - Etsy's announcement about partnering with Google on UCP-powered shopping experiences
+- [The Agentic Commerce Platform: Shopify Connects Any Merchant to Every AI Conversation](https://www.shopify.com/news/ai-commerce-at-scale) - Shopify's announcement of UCP and native commerce integrations across AI channels
+- [Target's New Shopping Experience on Google](https://corporate.target.com/press/fact-sheet/2026/01/google-gemini-2026) - Target's fact sheet on their UCP-powered shopping experience in Google AI Mode and Gemini app
 
 ## Related Protocols
 
