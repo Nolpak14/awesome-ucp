@@ -80,12 +80,16 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 
 * [What is UCP?](#what-is-ucp)
 * [Official Resources](#official-resources)
-* [Adopters & Endorsers](#adopters--endorsers)
 * [Implementations](#implementations)
 * [AI & Agent Integrations](#ai--agent-integrations)
 * [Developer Tools](#developer-tools)
+* [Mockup Server](#mockup-server)
 * [Learning Resources](#learning-resources)
+* [Videos](#videos)
+* [Use Cases](#use-cases)
 * [Related Protocols](#related-protocols)
+* [Contributing](#contributing)
+* [Adopters & Endorsers](#adopters--endorsers)
 
 ## What is UCP?
 
@@ -100,66 +104,6 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 - [Specification](https://ucp.dev/specification/overview/) - Complete technical specification
 - [Playground](https://ucp.dev/playground/) - Experiment with the protocol
 - [Roadmap](https://ucp.dev/documentation/roadmap/) - Future development plans
-
-<br>
-
-## Legend
-
-* 🎖️ – official implementation
-* programming language
-  * 🐍 – Python
-  * 📇 – TypeScript/JavaScript
-  * 🏎️ – Go
-  * 🦀 – Rust
-  * #️⃣ – C#
-  * ☕ – Java
-* scope
-  * ☁️ – Cloud Service
-  * 🏠 – Local Service
-* role
-  * 🏪 – Merchant/Business
-  * 🤖 – AI Platform/Agent
-  * 💳 – Payment Provider
-
-<br>
-
-## Adopters & Endorsers
-
-### Co-developers
-
-- [Google](https://google.com)
-- [Shopify](https://shopify.com)
-- [Etsy](https://etsy.com)
-- [Wayfair](https://wayfair.com)
-- [Target](https://target.com)
-- [Walmart](https://walmart.com)
-
-### Payment Providers
-
-- [Adyen](https://adyen.com)
-- [American Express](https://americanexpress.com)
-- [Ant International](https://www.antgroup.com)
-- [Mastercard](https://mastercard.com)
-- [PayPal](https://paypal.com)
-- [Stripe](https://stripe.com)
-- [Visa](https://visa.com)
-- [Worldpay](https://worldpay.com)
-
-### Retailers & Marketplaces
-
-- [Best Buy](https://bestbuy.com)
-- [Carrefour](https://carrefour.com)
-- [Chewy](https://chewy.com)
-- [Flipkart](https://flipkart.com)
-- [Gap](https://gap.com)
-- [Kroger](https://kroger.com)
-- [Lowe's](https://lowes.com)
-- [Macy's](https://macys.com)
-- [Sephora](https://sephora.com)
-- [Shopee](https://shopee.com)
-- [The Home Depot](https://homedepot.com)
-- [Ulta](https://ulta.com)
-- [Zalando](https://zalando.com)
 
 <br>
 
@@ -185,6 +129,28 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 
 <br>
 
+## Mockup Server
+
+Quickly spin up a local UCP-compliant mock server for development and testing:
+
+```bash
+# Install the UCP client with server extras
+uv pip install "ucp-client[server]==0.0.11"
+
+# Run the mockup server
+uv run ucp mockup_server
+```
+
+The mockup server provides a fully functional UCP endpoint at `http://localhost:8182` with:
+- Product catalog
+- Checkout session management
+- Mock payment processing
+- Order tracking
+
+Perfect for testing your AI agents and UCP integrations locally.
+
+<br>
+
 ## Learning Resources
 
 - [Building the Universal Commerce Protocol](https://shopify.engineering/UCP) - Shopify's deep dive into UCP architecture, capabilities, and how AI agents conduct transactions with merchants
@@ -192,6 +158,31 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 - [Etsy Partners with Google on AI-Powered Shopping](https://www.etsy.com/news/etsy-partners-with-google-on-ai-powered-shopping) - Etsy's announcement about partnering with Google on UCP-powered shopping experiences
 - [The Agentic Commerce Platform: Shopify Connects Any Merchant to Every AI Conversation](https://www.shopify.com/news/ai-commerce-at-scale) - Shopify's announcement of UCP and native commerce integrations across AI channels
 - [Target's New Shopping Experience on Google](https://corporate.target.com/press/fact-sheet/2026/01/google-gemini-2026) - Target's fact sheet on their UCP-powered shopping experience in Google AI Mode and Gemini app
+
+<br>
+
+## Videos
+
+- [Google I/O 2025: UCP Introduction](https://www.youtube.com/watch?v=alcvT02aovs) - Google's official introduction to Universal Commerce Protocol
+- [UCP Deep Dive](https://www.youtube.com/watch?v=yDKpF6CjBUo) - Technical deep dive into UCP architecture and implementation
+
+<br>
+
+## Use Cases
+
+### 🛍️ AI Shopping Assistant
+
+The primary use case for UCP is enabling AI agents to shop on behalf of users. Instead of users manually browsing websites, adding items to cart, and checking out, an AI assistant can:
+
+1. **Discover** merchants and their capabilities via `/.well-known/ucp`
+2. **Search & Browse** products using natural language
+3. **Create Checkout** with selected items and user preferences
+4. **Handle Payment** securely through standardized payment flows
+5. **Track Orders** and provide real-time updates
+
+This creates a seamless conversational commerce experience where users simply tell the AI what they want, and the agent handles the entire purchasing flow.
+
+**Real-world Implementation:** [Upsonic UCP Agent](https://github.com/Upsonic/UCP-Agent) demonstrates this pattern with a fully functional shopping assistant that uses UCP to interact with merchants.
 
 <br>
 
@@ -208,3 +199,43 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 ## Contributing
 
 Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
+
+<br>
+
+## Adopters & Endorsers
+
+### Co-developers
+
+- [x] [Google](https://google.com)
+- [x] [Shopify](https://shopify.com)
+- [x] [Etsy](https://etsy.com)
+- [x] [Wayfair](https://wayfair.com)
+- [x] [Target](https://target.com)
+- [x] [Walmart](https://walmart.com)
+
+### Payment Providers
+
+- [x] [Adyen](https://adyen.com)
+- [x] [American Express](https://americanexpress.com)
+- [x] [Ant International](https://www.antgroup.com)
+- [x] [Mastercard](https://mastercard.com)
+- [x] [PayPal](https://paypal.com)
+- [x] [Stripe](https://stripe.com)
+- [x] [Visa](https://visa.com)
+- [x] [Worldpay](https://worldpay.com)
+
+### Retailers & Marketplaces
+
+- [x] [Best Buy](https://bestbuy.com)
+- [x] [Carrefour](https://carrefour.com)
+- [x] [Chewy](https://chewy.com)
+- [x] [Flipkart](https://flipkart.com)
+- [x] [Gap](https://gap.com)
+- [x] [Kroger](https://kroger.com)
+- [x] [Lowe's](https://lowes.com)
+- [x] [Macy's](https://macys.com)
+- [x] [Sephora](https://sephora.com)
+- [x] [Shopee](https://shopee.com)
+- [x] [The Home Depot](https://homedepot.com)
+- [x] [Ulta](https://ulta.com)
+- [x] [Zalando](https://zalando.com)
