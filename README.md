@@ -45,6 +45,7 @@ A curated list of awesome Universal Commerce Protocol (UCP) resources, tools, an
 ## AI & Agent Integrations
 
 - 🤖🐍 [UCP Agent Demo](https://github.com/Upsonic/UCP-Agent) - A shopping assistant powered by Upsonic AI Agent and UCP (Universal Commerce Protocol)
+- 🤖📇 [agorio](https://github.com/Nolpak14/agorio) - Open-source TypeScript SDK for building AI commerce agents with UCP discovery, 12 shopping tools, LLM adapters, and a mock merchant server for testing. `npm install @agorio/sdk`
 
 <br>
 
